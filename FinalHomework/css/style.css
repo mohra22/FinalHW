@@ -1,0 +1,80 @@
+
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Custom styles for circular images */
+.circle-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Create a circular shape */
+  }
+
+  /* Custom styles for square images */
+  .square-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Media query for smaller screens (circle images) */
+  @media (max-width: 772px) {
+    .image-container {
+    position: relative;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+    .circle-image {
+      width: 100%;
+      margin: 0 auto; /* Center the image */
+    }
+  }
+
+  /* Media query for larger screens (square images) */
+  @media (min-width: 992px) {
+    .image-container {
+    position: relative;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+    .circle-image {
+      display: none; /* Hide circular images */
+    }
+    .square-image {
+      border-radius: 0; /* Remove border-radius for square images */
+    }
+  }
+
